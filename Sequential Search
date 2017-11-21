@@ -1,0 +1,15 @@
+# DECLARE index : INTEGER
+# DECLARE numbers : ARRAY[0..9] OF INTEGER
+# DECLARE found : BOOLEAN
+# DECLARE target : INTEGER
+numbers = []
+for index in range(0,10):
+  msg = "Enter number %s: " % index
+  numbers.append(int(input(msg)))
+
+found = False
+target = int(input("Enter number to search for"))
+for index in range(0,10):
+  if target == numbers[index]:
+    found = True
+print(found)
